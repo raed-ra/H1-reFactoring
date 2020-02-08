@@ -83,7 +83,7 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #2a51a3;
 }
 
 .benefit-lead {
@@ -103,20 +103,17 @@ p {
 
 .benefit-lead h3 {
     margin-bottom: 10px;
-    text-align: center;
-    background-color: #0072bb;
+    text-align: center; 
 }
 
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
-    background-color: #0072bb;
 }
 
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
-    background-color: #0072bb;
 }
 
 .benefit-lead img {
