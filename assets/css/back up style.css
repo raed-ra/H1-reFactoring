@@ -33,30 +33,6 @@ body {
     font-size: 20px;
 }
 
-/* Large */
-.navigation {
-    display: flex;
-    flex-flow: row wrap;
-    /* This aligns items to the end line on main-axis */
-    justify-content: flex-end;
-  }
-  
-  /* Medium screens */
-  @media all and (max-width: 800px) {
-    .navigation {
-      /* When on medium sized screens, we center it by evenly distributing empty space around items */
-      justify-content: space-around;
-    }
-  }
-  
-  /* Small screens */
-  @media all and (max-width: 500px) {
-    .navigation {
-      /* On small screens, we are no longer using row direction but column */
-      flex-direction: column;
-    }
-  }
-
 .header div ul {
     list-style-type: none;
     margin-top: 20px
@@ -64,7 +40,8 @@ body {
 
 .header div ul li {
     display: inline-block;
-    margin-left: 20px;   
+    margin-left: 20px;
+    
 }
 
 a {
@@ -74,7 +51,6 @@ a {
 
 p {
     font-size: 16px;
-    padding-left: 20px;
 }
 
 .hero {
@@ -97,56 +73,36 @@ p {
     margin-right: 25px;
 }
 
-.wrapper {
-    display: flex; 
-    
-
-    
-  }
-  
-/* .wrapper > * {
-    padding: 10px;
-    flex: 1 100;
-  } */
-.main {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex: 4;
-
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
-.benefit-aside-2 {
-    /* margin-right: 20px; */
-    /* clear: both; */
-    /* float: right; */
-    /* width: 18%; */
-
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 18%;
+    height: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2a51a3;
-    flex: 1;
-    padding: 20px;
-    margin: 0 0 0 20px;
-    height: auto
-    
-    
-    
-    
 }
 
 .benefit-lead {
     margin-bottom: 32px;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .benefit-brand {
     margin-bottom: 32px;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .benefit-lead h3 {
@@ -163,14 +119,15 @@ p {
 
 .benefit-cost h3 {
     margin-bottom: 10px;
-    text-align: center
+    text-align: center;
 
 }
 
 .benefit-lead img {
     display: block;
     margin: 15px auto;
-    max-width: 150px;  
+    max-width: 150px;
+    
 }
 
 .benefit-brand img {
@@ -183,76 +140,66 @@ p {
     display: block;
     margin: 15px auto;
     max-width: 150px;
+    
 }
 
 .search-engine-optimization {
-     
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 280px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
     overflow: scroll;
-    flex-basis: 33%;
-    padding: 20px;
-    box-sizing: border-box;
-    
-   
 }
 .online-reputation-management {
-    
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 280px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
     overflow: scroll;
-    flex-basis: 33%;
-    padding: 20px;
-    box-sizing: border-box;
-    
-    
- 
 }
 
 .social-media-marketing {
-    
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 280px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
     overflow: scroll;
-    flex-basis: 33%;
-    padding: 20px;
-    box-sizing: border-box;
-    
-    
-    
 }
 
 .search-engine-optimization img {
+    max-height: 200px;
     width: 300px;
-    padding:20px
 }
 
 .online-reputation-management img {
+    max-height: 200px;
     width: 300px;
-    padding:20px
 }
 
 .social-media-marketing img {
+    max-height: 200px;
     width: 300px;
-    padding:20px
 }
+
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px ;
-    padding: 20px
 }
+
 .online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px ;
-    padding: 20px
 }
+
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
-    padding: 20px
 }
 
 .footer {
@@ -265,18 +212,3 @@ p {
 .footer h2 {
     font-size: 20px;
 }
-
-/* @media (min-width: 600px) {
-    .aside { flex: 1 0px 0px; }
-  }
-  
-@media  (min-width: 800px) {
-    .main            { flex: 3 0px; }
-    .main            { order: 1; }
-    .benefit-aside-2 { order: 2; }
-    .footer          { order: 3; }
-  }
-
-  body {
-    padding: 2em; 
-  } */
