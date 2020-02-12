@@ -263,7 +263,7 @@ p {
     font-size: 20px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
     .wrapper { display: flex;
     }
   }
