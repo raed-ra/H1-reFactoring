@@ -2,10 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+}s
 
 body {
     background-color: #d9dcd6;
+    font-family: 'lobster'
 }
 
 .header {
@@ -25,7 +26,7 @@ body {
     font-size: 60px
 }
 
-.header div {
+.header navigation {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -36,16 +37,19 @@ body {
 /* Large */
 .navigation {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     /* This aligns items to the end line on main-axis */
     justify-content: flex-end;
+    justify-content: space-evenly;
+    font-size: 20px
   }
   
   /* Medium screens */
   @media all and (max-width: 800px) {
     .navigation {
       /* When on medium sized screens, we center it by evenly distributing empty space around items */
-      justify-content: space-around;
+      justify-content: space-between;
+      justify-content: flex-end;
     }
   }
   
@@ -72,9 +76,10 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
+main p  {
+    font-size: 20px;
     padding-left: 20px;
+    font-family: lobster
 }
 
 .hero {
@@ -92,22 +97,7 @@ p {
     margin-right: 20px;
 }
 
-.float-right {
-    float: right;
-    margin-right: 25px;
-}
 
-.wrapper {
-    /* display: flex;  */
-    
-
-    
-  }
-  
-/* .wrapper > * {
-    padding: 10px;
-    flex: 1 100;
-  } */
 .main {
     display: flex;
     flex-direction: column;
@@ -116,23 +106,24 @@ p {
 
 }
 
-.benefit-aside-2 {
-    /* margin-right: 20px; */
-    /* clear: both; */
-    /* float: right; */
-    /* width: 18%; */
+.main > * {   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    overflow: scroll;
+    flex-basis: 33%;
+    padding: 20px;
+    box-sizing: border-box
+}
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.benefit-aside-2 {
+    font-family: 'lobster','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2a51a3;
     flex: 1;
     padding: 20px;
     margin: 0 0 0 20px;
-    height: auto
-    
-    
-    
-    
+
 }
+
 
 .benefit-lead {
     margin-bottom: 32px;
@@ -152,18 +143,21 @@ p {
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center; 
-    font-size-adjust: 0.2
+    font-size: 25px;
+    
 }
 
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
-    font-size-adjust: 0.2
+    font-size: 25px;
+    
 }
 
 .benefit-cost h3 {
     margin-bottom: 10px;
-    text-align: center
+    text-align: center;
+    font-size: 25px;
 
 }
 
@@ -187,53 +181,32 @@ p {
 
 .search-engine-optimization {
      
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    overflow: scroll;
-    flex-basis: 33%;
-    padding: 20px;
-    box-sizing: border-box;
     
    
 }
 .online-reputation-management {
     
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    overflow: scroll;
-    flex-basis: 33%;
-    padding: 20px;
-    box-sizing: border-box;
+  
 }
 
 .social-media-marketing {
     
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    overflow: scroll;
-    flex-basis: 33%;
-    padding: 20px;
-    box-sizing: border-box;
-    
-    
-    
+
+
 }
 
 .search-engine-optimization img {
-    width: 300px;
+    width: 400px;
     padding:20px
 }
 
 .online-reputation-management img {
-    width: 300px;
+    width: 400px;
     padding:20px
 }
 
 .social-media-marketing img {
-    width: 300px;
+    width: 400px;
     padding:20px
 }
 .search-engine-optimization h2 {
@@ -261,19 +234,13 @@ p {
 
 .footer h2 {
     font-size: 20px;
+    font-weight: bold
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 400px) {
     .wrapper { display: flex;
     }
   }
-  
-/* @media  (min-width: 800px) {
-    .main            { flex: 3 0px; }
-    .main            { order: 1; }
-    .benefit-aside-2 { order: 2; }
-    .footer          { order: 3; }
-  } */
 
   body {
     padding: 2em; 
