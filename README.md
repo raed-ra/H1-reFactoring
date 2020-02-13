@@ -16,7 +16,8 @@ html lang="en-us">
     <header class="header">
         <h1>Hori<span class="seo">seo</span>n</h1>
         <nav>    Note Chaned to NAV
-            <ul class="navigation">    NOTE:  CSS media added for navigation
+            <ul class="navigation">    NOTE:  CSS media added for navigation.  
+                NOTE: fixed one of the links in the navigation
                 <li>
                 </li>
                 <li>
